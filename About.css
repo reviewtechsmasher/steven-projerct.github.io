@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Suisse Intl Regular", sans-serif !important;
+}
+body, html{
+    overflow-x: hidden !important;
+}
+
+section{
+    display: flex;
+    height: auto;
+}
+section .right_cont{
+    height: calc(100vh - 55px);
+    width: 50vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(back.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .right_cont .box1 img{
+    position: fixed;
+    right: -100px;
+    top: -150px;
+    width:400px;
+    border: 8px solid #fff;
+    /* filter: blur(5px); */
+}
+
+section .right_cont #dsign3 img{
+    position: fixed;
+    right: 20%;
+    top: 10%;
+    width:350px;
+    z-index: 1;
+    /* filter: invert(100%); */
+}
+section .right_cont #dsign4 img{
+    position: fixed;
+    right: 70px;
+    top: 37%;
+    width:350px;
+    /* filter: invert(100%); */
+}
+section .right_cont .phone, section .right_cont .box1{
+    /* height: calc(100vh - 55px); */
+    height: auto;
+    width: auto;
+}
+section .right_cont .phone img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    z-index: 10;
+    position: absolute;
+}
+section .right_cont .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+header{
+    flex-direction: column;
+}
+
+header{
+    width: 50vw !important;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header nav ul{
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    position: relative;
+}
+header nav ul li a::after{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 0%;
+    height: 1px;
+    top: 110%;
+    left: 0;
+    transition: 0.8s ease-in-out;
+}
+
+header nav ul li:hover a::after{
+    width: 100%;
+}
+
+header .main_texts{
+    height: 60vh;
+    width: 30vw;
+    margin: auto 0;
+}
+header .main_texts h2{
+    font-weight: bold;
+    font-size: 60px;
+    word-spacing: 10px;
+}
+header .main_texts h3{
+    font-weight: bold;
+    font-size: 30px;
+    word-spacing:4px;
+}
+header .main_texts .desc{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+section #dsign5 img{
+    width: 200px;
+    top: 0 !important;
+    display: none;
+}
+section #dsign6 img{
+    width: 200px;
+    top: 0 !important;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+footer{
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090b1e;
+}
+
+footer .content{
+    width: 500px;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #090b1e;
+}
+
+
+footer p{
+    /* font-family: 'Montserrat', sans-serif !important; */
+    font-weight: 500;
+    color: #fdfdff;
+    font-size: 20px;
+}
+
+
+@media (max-width:1440px) {
+
+    
+
+    header .main_texts h2{
+
+        font-size: 50px;
+
+    }
+    header .main_texts h3{
+
+        font-size: 25px;
+
+    }
+    header .main_texts .desc{
+
+        font-size: 12px;
+
+    }
+
+    section .right_cont #dsign3 img{
+        width:260px;
+    }
+    section .right_cont #dsign4 img{
+        top: 30%;
+        width:260px;
+
+    }
+
+    section .right_cont .box1 img{
+        width:300px;
+    }
+    
+    header nav ul li a{
+        font-size: 10px;
+    }
+
+    section .right_cont .phone img{
+        height: 60vh;
+    }
+
+
+}
+
+@media (max-width:1024px) {
+
+    header nav ul{
+        width: 40vw;
+        /* background-color: aqua; */
+        /* margin-left: 200px; */
+        
+    }
+    header nav ul li a{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    
+    header .main_texts h2{
+
+        font-size: 30px;
+
+    }
+    header .main_texts h3{
+
+        font-size: 15px;
+
+    }
+    header .main_texts .desc{
+
+        font-size: 10px;
+        line-height: 20px;
+        word-spacing: 2px;
+        padding:0 20px 0 0;
+
+    }
+
+    section .right_cont #dsign3 img{
+        top: 40%;
+        right:20% ;
+        width:200px;
+    }
+    section .right_cont #dsign4 img{
+        top: 20%;
+        width:200px;
+
+    }
+
+    section .right_cont .box1 img{
+        width:250px;
+    }
+    
+    header nav ul li a{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:768px) {
+     header{
+        width: 100vw;
+        margin:0 20px;
+    }
+     header nav ul{
+        width: 80vw;
+        margin-left: 300px; 
+    }
+
+    section{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    section .right_cont{
+        width: 100vw;
+        justify-content: left;
+
+    }
+
+    section .right_cont .phone img{
+        height: 60vh;
+        position: relative;
+    }
+
+    section .right_cont #dsign3 img{
+        top: 40%;
+        right:20% ;
+        width:200px;
+    }
+    section .right_cont #dsign4 img{
+        top: 20%;
+        width:200px;
+
+    }
+
+    section .right_cont .box1 img{
+        width:250px;
+        display: none;
+    }
+
+    header .main_texts{
+        height: 80vh;
+        width: 50vw;
+        padding: 50px 0 0 0px;
+    }
+    header .main_texts h2{
+        font-weight: bold;
+        font-size: 40px;
+        word-spacing: 10px;
+    }
+    header .main_texts h3{
+        font-weight: bold;
+        font-size: 30px;
+        word-spacing:4px;
+    }
+    header .main_texts .desc{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    
+    header .main_texts h2{
+
+        font-size: 30px;
+
+    }
+    header .main_texts h3{
+
+        font-size: 15px;
+
+    }
+    header .main_texts .desc{
+
+        font-size: 10px;
+        line-height: 20px;
+        word-spacing: 2px;
+        /* padding:0 0px 0 20px; */
+
+    }
+
+    section .right_cont #dsign3 img{
+        top: 40%;
+        right:0% ;
+        width:200px;
+    }
+    section .right_cont #dsign4 img{
+        top: 20%;
+        width:200px;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    header nav ul{
+        width: 65vw;
+    }
+    header nav ul li a{
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width:425px) {
+    header{
+        width: 100vw !important;
+        margin: auto;
+    }
+    header nav{
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+    header nav ul{
+        width: 85vw;
+        margin:0 auto;
+    }
+
+    header nav ul li a{
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+   
+    section .right_cont{
+        justify-content: center;
+    }
+    section .right_cont #dsign3 img{
+        display: none;
+    }
+    section .right_cont #dsign4 img{
+        display: none;
+    }
+
+
+    section .cont{
+        display: flex;
+        height: 0vh;
+
+    }
+    section #dsign5 img{
+        width: 140px;
+        transform: translate(23%,-110%);
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+    section #dsign6 img{
+        width: 140px;
+        transform: translate(80%,-400%);
+        /* transform: translateX(20px); */
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+
+    
+    section .right_cont .box1 img{
+        width:250px;
+        display: none;
+    }
+
+    header .main_texts{
+        height: auto;
+        width: auto;
+        padding: 50px 0 50px 30px;
+    }
+
+    header .main_texts h2{
+        font-size: 30px;
+    }
+
+    header .main_texts h3{
+        font-size: 15px;
+    }
+
+    header .main_texts .desc{
+
+        font-size: 10px;
+        line-height: 20px;
+        word-spacing: 2px;
+        /* padding:0 0px 0 20px; */
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
