@@ -420,6 +420,7 @@ main video{
 
   #transf{
     display: none;
+    margin-left: 20px;
   }
 
   swiper-slide {
@@ -430,6 +431,7 @@ main video{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -20px;
 
   }
 
@@ -443,7 +445,7 @@ main video{
   swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: fit-content;
     height: auto;
 
   }
