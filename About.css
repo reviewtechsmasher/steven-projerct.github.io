@@ -351,7 +351,7 @@ footer p{
 @media (max-width:768px) {
      header{
         width: 100vw;
-        margin:0 20px;
+        margin:-40px 20px 0 20px;
     }
      header nav ul{
         width: 80vw;
@@ -469,7 +469,7 @@ footer p{
 @media (max-width:425px) {
     header{
         width: 100vw !important;
-        margin: auto;
+        margin: -50px 0 0 auto;
     }
     header nav{
         padding: 0;
