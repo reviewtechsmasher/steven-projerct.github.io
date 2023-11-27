@@ -277,6 +277,7 @@ header{
 main{
     padding: 100px 0 0 0;
     height: auto;
+    margin-bottom: -50px;
     width: 100vw !important;
     display: flex;
     justify-content: center;
