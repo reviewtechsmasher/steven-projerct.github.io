@@ -13,7 +13,7 @@ body, html{
     display: flex;
     justify-content: center !important;
     align-items: center;
-    
+    margin: 0 auto;
 }
 /* header{
     flex-direction: column;
