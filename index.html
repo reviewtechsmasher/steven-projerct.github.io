@@ -100,7 +100,7 @@
                 <li class="list">
                     <a href="#contact">
                         <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                        <span class="text">contact</span>
+                        <span class="text contact">contact</span>
                     </a>
                    
                 </li>
@@ -126,6 +126,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
+
         <div class="navbar">
 
             
@@ -155,9 +156,9 @@
                    
                 </li>
                 <li class="list">
-                    <a href="#contact">
+                    <a href="#popup">
                         <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                        <span class="text">contact</span>
+                        <span class="text contact">contact</span>
                     </a>
                    
                 </li>
@@ -192,6 +193,14 @@
         </video>
 
        </main>
+
+
+<!--        
+       <button class="toggle-button"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button> -->
 
     <div class="card_menu">
         <div class="pkg_boxes">
@@ -477,12 +486,16 @@
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 
-<!-- 
- <div id="popup">
+
+ <div id="popup" class="pop"
+ data-aos="fade-up"
+    data-aos-duration="1000">
 
     <div class="form-box">
         <div class="header">
+            <div class="stylsub"><button class="cross">X</button></div>
             <h1>contact us</h1>
+            <br>
         <p>Please write your message and contact information below. we will respond as soon as possible.</p>
         </div>
 
@@ -496,12 +509,12 @@
             <input type="checkbox" class="chech-box" required>
         <span>I agree to the terms and conditions</span>
         </div>
-        <button type="submit" class="submit-btn">Send</button>
+        <button class="submit-btn">Send</button>
       </form>
     </div>
    
 
-</div> -->
+</div>
 
 
  <br><br><br>
@@ -517,7 +530,7 @@
     <ul>
 
         <li class="list">
-        <a href="#home">
+        <a href="index.html">
             <span class="text">Home</span>
         </a>
         
@@ -553,7 +566,7 @@
     </li>
     <li class="list">
         <a href="#contact">
-            <span class="text">Contact us</span>
+            <span class="text contact">Contact us</span>
         </a>
     </li>
 </ul>
@@ -561,9 +574,9 @@
 <br>
 
 <div class="social">
-    <div class="fb"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
-    <div class="insta"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
-    <div class="yt"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></div>
+    <div class="fb"><a href="https://www.facebook.com/therealstevenwilson?mibextid=ZbWKwL" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
+    <div class="insta"><a href="https://instagram.com/therealstevenwilson?igshid=NzZlODBkYWE4Ng==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></div>
+    <div class="yt"><a href="https://m.youtube.com/channel/UC08CnqoKidFLAivj8aPEN0w#bottom-sheet" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></div>
 </div>
 <br>
     <p>coppyright@cloudflixmedia</p>
@@ -580,6 +593,8 @@
 <script>
   AOS.init();
 </script>
+
+
 <script src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

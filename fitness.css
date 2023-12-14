@@ -9,6 +9,12 @@
 body, html{
     overflow-x: hidden !important;
 }
+.glass_eff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 /* header{
     flex-direction: column;
 }
@@ -83,7 +89,7 @@ header nav ul li:hover a::after{
     height: 60vh;
    background-color: #fff;
    color: #000;
-   transition: .5s;
+   transition: 1s ease-in-out;
 
   }
 

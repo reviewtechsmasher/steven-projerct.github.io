@@ -18,6 +18,10 @@ body{
     /* background: linear-gradient(180deg, rgba(180, 183, 182, 0.061) 0%, rgba(53, 65, 64, 0.00) 100%) !important; } */
 }
 
+.close{
+    display: none !important;
+}
+
 #popup{
     position: fixed;
     top: 50%;
@@ -27,9 +31,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 450px;
+    width: 30vw;
     border-radius: 10px;
-    height: 60vh;
+    height: auto;
+    padding: 80px 0;
    background-color: #fff;
    color: #000;
    transition: .5s;
@@ -64,7 +69,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 25vh;
+    min-height: 30vh;
   }
   
   #register input{
@@ -80,23 +85,7 @@ body{
     border-bottom: 1px solid rgb(47, 47, 47);
     /* position: relative; */
   }
-  #register .plh1 p, #register .plh2 p {
-    position: relative;
-    top: -40px;
-    font-size: 13px;
-    word-spacing: 2px;
-    user-select: none;
-  }
-
-  #register input:focus ~ .plh1 p{
-    transition: .5s ease-in-out;
-    top: -70px;
-  }
-  #register #field2:focus ~ .plh2 p{
-    transition: .5s ease-in-out;
-    top: -70px;
-  }
-
+ 
   .submit-btn{
     background-color: #000;
     padding:5px 10px; 
@@ -104,6 +93,15 @@ body{
     font-size: 20px;
     text-transform: uppercase;
     border-radius: 50px;
+  }
+  .stylsub .cross{
+    background: none;
+    border: none;
+  }
+  .stylsub{
+    display: flex;
+    justify-content: right;
+    width: 100%;
   }
 
 
@@ -1265,10 +1263,40 @@ footer p{
     .overlay_banner img{
         width: 80vw;
     }
+
+/*     
+      #popup .header h1{
+        font-size: 62px;font-weight: bold;
+      }
+
+      #popup .header p{
+        font-size: 28px;
+        word-spacing: 4px;
+        line-height: 40px;
+      }
+    
+      #register .plh1 p, #register .plh2 p {
+        font-size: 23px;
+        color: rgb(174, 174, 174);
+      }
+    
+      #register input:focus ~ .plh1 p{
+        top: -80px;
+      }
+      #register #field2:focus ~ .plh2 p{
+        top: -80px;
+      }
+    
+      .conditions span{
+        font-size: 28px;
+      }
+      .submit-btn{
+        padding:15px 10px; 
+        font-size: 30px;
+      } */
+
        
 }
-
-
 
 
 
@@ -1352,6 +1380,38 @@ footer p{
         top: -200px;
         left: 980px !important;
     }
+
+
+    #popup .header h1{
+        font-size: 32px;font-weight: bold;
+      }
+
+      #popup .header p{
+        font-size: 18px;
+        word-spacing: 2px;
+        line-height: 30px;
+      }
+    
+      #register .plh1 p, #register .plh2 p {
+        font-size: 13px;
+        color: rgb(174, 174, 174);
+      }
+    
+      #register input:focus ~ .plh1 p{
+        top: -70px;
+      }
+      #register #field2:focus ~ .plh2 p{
+        top: -70px;
+      }
+    
+      .submit-btn{
+        padding:5px 10px; 
+        font-size: 20px;
+      }
+
+      .conditions span{
+        font-size: 18px;
+      }
 
 }
 @media (max-width:1024px) {
@@ -1450,8 +1510,6 @@ footer p{
         padding: 12px;
         border-radius: 50px;
         border:5px solid #000;
-    }
-
     }
 
     .membership h2{
@@ -1563,7 +1621,14 @@ footer p{
     }
 
 
+    #popup{width: 40vw;}
 
+    .conditions span{
+        font-size: 15px;
+      }
+
+
+}
 
 
 @media (max-width:968px) {
@@ -1666,20 +1731,6 @@ footer p{
         width: 300px;
     }
 
-    /* .righthalf img, .righthalf{
-        margin-left: 10px;
-        width: 200px;
-        height: 200px;
-    }
-    .lefthalf img, .lefthalf{
-        margin-right: 15px;
-        width: 200px;
-        height: 200px;
-    }  */
-
-    /* .overlays #gold{
-        display: none;
-    } */
 
     .portal_cards .card1 img, .portal_cards .card2 img, .portal_cards .card3 img{
         width: 140px;
@@ -1703,6 +1754,7 @@ footer p{
         font-size: 10px !important;
 
     }
+    #popup{width: 50vw;}
 
 
 
@@ -1816,17 +1868,6 @@ footer p{
         color: #fdfdff;
         font-size: 12px;
     }
-
-    /* .righthalf img, .righthalf{
-        margin-left: 10px;
-        width: 200px;
-        height: 200px;
-    }
-    .lefthalf img, .lefthalf{
-        margin-right: 15px;
-        width: 200px;
-        height: 200px;
-    }  */
 
     .phone img{
         width: 270px;
@@ -2038,6 +2079,9 @@ footer p{
         width: 80%;
         display: block;
     }
+
+    #popup{width: 90vw;}
+
 
 
         
